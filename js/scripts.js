@@ -72,7 +72,7 @@ $(document).ready(function() {
   
     }
   
-    //Event listeners
+    
     $("#getQuote").on("click", updateQuote);
     $("#tweet").on("click", tweet);
   

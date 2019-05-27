@@ -3,6 +3,13 @@
   position: static;
 }
 
+.quote {
+  border-radius: 10px 10px 0 0;
+  height: 40px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: white;
+}
 
 .quote {
   overflow: hidden; 
@@ -11,7 +18,7 @@
   margin: 0 auto; 
   letter-spacing: .15em; 
   animation: 
-    typing 3.5s steps(40, end),
+    typing 1.5s steps(40, end),
     blink-caret .75s step-end infinite;
 }
 
@@ -28,37 +35,47 @@
 }
 
 body {
-  background-color: #111111;
-background-image: url(https://wallpapercave.com/wp/0lvVOCZ.jpg);
+  background-color: white;
   background-size: 1800px 600px;
   font-family: 'hyperspace', sans-serif;
   text-align: center;
 }
 
 header {
-	background: black;
-	background: rgba( 159, 159, 207, 0.65);
-	height: 70px;
-	width: 100%;
-	color: white;
-	font-family: OCR A Std, monospace;
-	position: relative;
+  width: 100%;
+  background-size: 100%;
+  background-position: center;
+  
 }
 
+img {
+  width: 100%;
+  height: 250px;
+}
+
+
+
+.hero-content{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    
+  
+}
+
+
+
 .container{
-  margin: 30px;
   position: center;
   border-radius: 7px;
   background-color: black;
+  
 }
 
-.quote {
-  border-radius: 10px 10px 0 0;
-  height: 40px;
-  font-weight: bold;
-  font-size: 1.5rem;
-  color: white;
-}
+
 
 .title {
   height: 50px;
