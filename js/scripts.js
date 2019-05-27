@@ -51,28 +51,29 @@ $(document).ready(function() {
   
     
   
-   var randomMovieQuote = "";
-   var randomMovieTitle = "";
+   var randomQuote = "";
+   var randomTitle = "";
   
     //tweet current quote and film
     function tweet() {
-      window.open("https://twitter.com/intent/tweet?text= " + randomMovieQuote + " - " + randomMovieTitle);
+      window.open("https://twitter.com/intent/tweet?text= " + randomQuote + " - " + randomTitle);
     }
   
     /*function to obtain a random quote and display in html*/
     function updateQuote() {
       random = Math.floor(Math.random() * quotes.length);
-      randomMovieQuote = quotes[random].quote;
-      randomMovieTitle = quotes[random].title;
-      $("#quote").html(randomMovieQuote);
-      $("#title").html(randomMovieTitle);
+      randomQuote = quotes[random].quote;
+      randomTitle = quotes[random].title;
+      $("#quote").html(randomQuote);
+      $("#title").html(randomTitle);
     
     var youTubeUrl = "https://www.youtube.com/embed/" + quotes[random].scene;
     $(".youtube-iframe").html("<iframe width=100% height='500px' src='" + youTubeUrl + "?showinfo=0' frameborder='0' allowfullscreen>"); 
   
     }
   
-    
+  
+
     $("#getQuote").on("click", updateQuote);
     $("#tweet").on("click", tweet);
   
